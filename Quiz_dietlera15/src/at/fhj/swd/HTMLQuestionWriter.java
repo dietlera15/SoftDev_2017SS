@@ -19,7 +19,11 @@ public class HTMLQuestionWriter {
 		try {
 			writer = new PrintWriter(new FileOutputStream(Destination));
 			writer.println(dietlera15.getHeader());
-			
+			writer.println("<body>\n"
+					+ "\t<header>\n"
+						+ "\t\t<h1>Uebung 1: Collections und Kommandozeilenargumente</h1>\n"
+						+ "\t\t<h3>Quiz - Dietler Andreas</h3>\n"
+					+ "\t</header>\n");
 			
 			//writer.println(Question.get(1));
 			

@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class QuestionReader {
-	private ArrayList<Question> Question;
+	private ArrayList<Question> Question = new ArrayList<Question>();
 	
 	public QuestionReader (String path) {
 		BufferedReader reader = null;
@@ -19,26 +19,31 @@ public class QuestionReader {
 				index++;
 				String line = null;
 				while ((line = reader.readLine()) != null) {
-					Question.add(new Question(line));
-					if (Question.get(index - 1).getFormatCorrect()) {
-						dietlera15.LogFileMessage("corrupted values in line " + index + ".");
+					if (line.startsWith("#")) {
+						dietlera15.LogFileMessage("Comment in line " + index + ": " + line);
+					} else {
+						Question.add(new Question(line));
+						int lastIndex = Question.size() - 1;
+						if (!Question.get(lastIndex).getFormatCorrect()) {
+							dietlera15.LogFileMessage("Corrupted values in line " + index + ": " + Question.get(lastIndex).getWrongFormatMsg());
+						}
 					}
 					index++;
 				}
-				System.out.println("Read file successfully.");
+				System.out.println(dietlera15.actualDateTimeForm() + "Reading file successfull.");
 			} else {
-				System.out.println("The format of the given CSV-file is wrong.");
+				System.out.println(dietlera15.actualDateTimeForm() + "The format of the given CSV-file is wrong.");
 				dietlera15.LogFileMessage("Wrong format of CSV-file (Header not correct).");
 			}
 		} catch (IOException error) {
-			System.out.println("Error reading file. More details in log file.");
+			System.out.println(dietlera15.actualDateTimeForm() + "Error reading file. More details in log file.");
 			dietlera15.LogFileMessage("Error reading CSV file.");
 			dietlera15.LogFileError(error);
 		} finally {
 			if (reader != null) {
 				try {
 					reader.close();
-					System.out.println("Read file aborted.");
+					System.out.println(dietlera15.actualDateTimeForm() + "Read file finished.");
 				} catch (Exception error) {
 					dietlera15.LogFileError(error);
 				}

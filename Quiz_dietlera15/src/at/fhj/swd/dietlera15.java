@@ -20,6 +20,10 @@ public class dietlera15 {
 		return strDate;
 	}
 	
+	public static String actualDateTimeForm() {
+		return "["+ actualDateTime() + "] - ";
+	}
+	
 	/**
 	 * writes an exception into a log file
 	 * @param exception message to be logged

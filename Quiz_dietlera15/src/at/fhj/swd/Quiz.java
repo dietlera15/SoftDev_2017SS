@@ -8,7 +8,7 @@ public class Quiz {
 	// actual user directory
 	private static String actualPath = System.getProperty("user.dir");
 	// path of source-file
-	private static String source = actualPath + "/CSVFile/dietlera15_questions.csv";
+	private static String source = actualPath + "/CSVFile/Question.csv";
 	// path of destination-file
 	private static String destination = actualPath + "/HTMLFile/index.html";
 	// path of log-file
@@ -17,8 +17,8 @@ public class Quiz {
 	public static void main(String[] args) {
 		// create log file
 		dietlera15.LogFileMessage("-------------------------");
-		System.out.println("A Log-File has been created / New Entries have been written to the Log-File");
-		System.out.println("The file can be found at: " + logFile);
+		System.out.println(dietlera15.actualDateTimeForm() + "A Log-File has been created / New Entries have been written to the Log-File");
+		System.out.println(dietlera15.actualDateTimeForm() + "The file can be found at: " + logFile);
 		System.out.println("-------------------------");
 		dietlera15.LogFileMessage("Quiz program started.");
 		dietlera15.LogFileMessage("Actual Directory: " + actualPath);
@@ -28,9 +28,9 @@ public class Quiz {
 		}
 		
 		if (args.length == 0) {
-			System.out.println("No arguments given, program started with initial values.");
-			System.out.println("Source file: " + source);
-			System.out.println("Destination file: " + destination);
+			System.out.println(dietlera15.actualDateTimeForm() + "No arguments given, program started with initial values.");
+			System.out.println(dietlera15.actualDateTimeForm() + "Source file: " + source);
+			System.out.println(dietlera15.actualDateTimeForm() + "Destination file: " + destination);
 			System.out.println("-------------------------");
 		}
 		
@@ -57,8 +57,8 @@ public class Quiz {
 			writer.writeHTML();
 			dietlera15.LogFileMessage("Quiz program stopped.");
 		} else {
-			System.out.println("Please check your Input Parameter");
-			System.out.println("Quiz <Source-File> <Destination-File>");
+			System.out.println(dietlera15.actualDateTimeForm() + "Please check your Input Parameter");
+			System.out.println(dietlera15.actualDateTimeForm() + "Quiz <Source-File> <Destination-File>");
 		}
 	}
 }
