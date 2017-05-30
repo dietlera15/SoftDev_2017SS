@@ -31,3 +31,31 @@
 [2017-05-30 22:05:02] - Corrupted values in line 11: Not enough answers for question.
 [2017-05-30 22:05:02] - 7 lines were found in file.
 [2017-05-30 22:05:02] - Quiz program stopped.
+[2017-05-30 23:10:48] - -------------------------
+[2017-05-30 23:10:48] - Quiz program started.
+[2017-05-30 23:10:48] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
+[2017-05-30 23:10:48] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/question_dietlera15.csv
+[2017-05-30 23:10:48] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
+[2017-05-30 23:10:48] - Comment in line 2: #Fragen ;;;;;
+[2017-05-30 23:10:48] - Line 12 contains corrupted values: Question format is wrong (check CSV file).
+[2017-05-30 23:10:48] - Comment in line 15: #Folgende Zeile ist ungueltig:;;;;;
+[2017-05-30 23:10:48] - Comment in line 17: #Tests;;;;;
+[2017-05-30 23:10:48] - Line 18 contains corrupted values: Correct index out of Bounds.
+[2017-05-30 23:10:48] - Line 19 contains corrupted values: Not enough answers for question.
+[2017-05-30 23:10:48] - Comment in line 22: #Warum ist die Banane krumm?
+[2017-05-30 23:10:48] - 20 lines were found in file.
+[2017-05-30 23:10:48] - Quiz program stopped.
+[2017-05-30 23:11:40] - -------------------------
+[2017-05-30 23:11:40] - Quiz program started.
+[2017-05-30 23:11:40] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
+[2017-05-30 23:11:40] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/question_dietlera15.csv
+[2017-05-30 23:11:40] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
+[2017-05-30 23:11:40] - Comment in line 2: #Fragen ;;;;;
+[2017-05-30 23:11:40] - Line 12 contains corrupted values: Question format is wrong (check CSV file).
+[2017-05-30 23:11:40] - Comment in line 15: #Folgende Zeile ist ungueltig:;;;;;
+[2017-05-30 23:11:40] - Comment in line 17: #Tests;;;;;
+[2017-05-30 23:11:40] - Line 18 contains corrupted values: Correct index out of Bounds.
+[2017-05-30 23:11:40] - Line 19 contains corrupted values: Not enough answers for question.
+[2017-05-30 23:11:40] - Comment in line 22: #Warum ist die Banane krumm?
+[2017-05-30 23:11:40] - 20 lines were found in file.
+[2017-05-30 23:11:40] - Quiz program stopped.

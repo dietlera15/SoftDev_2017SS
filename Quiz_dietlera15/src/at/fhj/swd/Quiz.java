@@ -12,7 +12,7 @@ public class Quiz {
 	// actual user directory
 	private static String actualPath = System.getProperty("user.dir");
 	// path of source-file
-	private static String source = actualPath + "/CSVFile/Testfile.csv";
+	private static String source = actualPath + "/CSVFile/question_dietlera15.csv";
 	// path of destination-file
 	private static String destination = actualPath + "/HTMLFile/index.html";
 	// path of log-file
