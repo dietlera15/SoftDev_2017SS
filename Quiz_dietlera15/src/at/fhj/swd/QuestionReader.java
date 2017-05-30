@@ -1,7 +1,6 @@
 package at.fhj.swd;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,20 +11,30 @@ public class QuestionReader {
 	public QuestionReader (String path) {
 		BufferedReader reader = null;
 		try {
+			//start reading of file
 			reader = new BufferedReader(new FileReader(path));
+			// index is generated for the messages in the log-file
 			int index = 1;
 			String header[] = reader.readLine().split(";");
+			/* 
+			 * if the header format is wrong the program is stopped
+			 * 
+			 * the task is a little bit different (ignore line)
+			 * but why should i read an incorrect CSV file?
+			 */
 			if(checkCSV(header)) {
 				index++;
 				String line = null;
 				while ((line = reader.readLine()) != null) {
+					// if the line starts with an #, it contains a comment and can be skipped
 					if (line.startsWith("#")) {
 						dietlera15.LogFileMessage("Comment in line " + index + ": " + line);
 					} else {
 						Question.add(new Question(line));
 						int lastIndex = Question.size() - 1;
+						// if the format of the question is not correct a message is logged
 						if (!Question.get(lastIndex).getFormatCorrect()) {
-							dietlera15.LogFileMessage("Corrupted values in line " + index + ": " + Question.get(lastIndex).getWrongFormatMsg());
+							dietlera15.LogFileMessage("Line " + index + " contains corrupted values: " + Question.get(lastIndex).getWrongFormatMsg());
 						}
 					}
 					index++;
@@ -50,7 +59,11 @@ public class QuestionReader {
 			}
 		}
 	}
-	
+	/**
+	 * checks the header of the CSV file
+	 * @param header
+	 * @return
+	 */
 	private boolean checkCSV(String[] header){
 		boolean[] col = new boolean[] {false, false, false};
 		if(header.length != 3) return false;

@@ -1,5 +1,9 @@
 package at.fhj.swd;
-
+/**
+ * generates a question, the answers and the correct answer
+ * @author andreas
+ *
+ */
 public class Question {
 	private String question;
 	private String[] answer;
@@ -7,6 +11,11 @@ public class Question {
 	private boolean formatCorrect;
 	private String wrongFormatMsg = "";
 	
+	/**
+	 * generates the question out of an String
+	 * when the format is wrong an error message is generated
+	 * @param line
+	 */
 	public Question(String line) {
 		String[] splitted = line.split(";");
 		formatCorrect = false;
@@ -16,26 +25,31 @@ public class Question {
 				answer = splitted[1].split("/");
 				try {
 					correctIndex = Integer.parseInt(splitted[2]);
-					if (correctIndex >= 0 && correctIndex <= 3) {
+					if (correctIndex >= 0 && correctIndex < answer.length) {
 						formatCorrect = true;
 					} else {
-						wrongFormatMsg = "Index out of Bounds.";
+						wrongFormatMsg = "Correct index out of Bounds.";
 					}
 				} catch (NumberFormatException error) {
 					dietlera15.LogFileError(error);
 					wrongFormatMsg = "Parsing of index failed.";
 				}
 			} else {
-				wrongFormatMsg = "Not enough or too many answers for question.";
+				wrongFormatMsg = "Not enough answers for question.";
 			}
 		} else {
 			wrongFormatMsg = "Question format is wrong (check CSV file).";
 		}
 	}
 
+	/**
+	 * checks if the string contains enough answers
+	 * @param answers
+	 * @return
+	 */
 	private boolean checkQuestion(String answers) {
 		String[] answer = answers.split("/");
-		if (answer.length == 4) {
+		if (answer.length > 1) {
 			return true;
 		} else {
 			return false;

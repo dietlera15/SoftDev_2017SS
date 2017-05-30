@@ -1,19 +1,26 @@
 package at.fhj.swd;
 
 import java.util.ArrayList;
-
+/**
+ * converts  CSV File into a HTML File
+ * @author Andreas Dietler
+ *
+ */
 public class Quiz {
 	// questions from CSV-file
 	private static ArrayList<Question> question;
 	// actual user directory
 	private static String actualPath = System.getProperty("user.dir");
 	// path of source-file
-	private static String source = actualPath + "/CSVFile/Question.csv";
+	private static String source = actualPath + "/CSVFile/Testfile.csv";
 	// path of destination-file
 	private static String destination = actualPath + "/HTMLFile/index.html";
 	// path of log-file
 	public static String logFile = System.getProperty("user.dir") + "/log.txt";
-	
+	/**
+	 * generates outputs to the console and starts the program in correct order
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// create log file
 		dietlera15.LogFileMessage("-------------------------");
@@ -26,14 +33,13 @@ public class Quiz {
 		for(String argument : args) {
 			dietlera15.LogFileMessage("Arguments given: " + argument);
 		}
-		
+		// start with default values in case that no arguments were given
 		if (args.length == 0) {
 			System.out.println(dietlera15.actualDateTimeForm() + "No arguments given, program started with initial values.");
 			System.out.println(dietlera15.actualDateTimeForm() + "Source file: " + source);
 			System.out.println(dietlera15.actualDateTimeForm() + "Destination file: " + destination);
 			System.out.println("-------------------------");
 		}
-		
 		// check the given arguments
 		if (args.length == 2 || args.length == 0) {
 			// assign given arguments (if given)
@@ -53,6 +59,7 @@ public class Quiz {
 				dietlera15.LogFileError(error);
 			}
 			// write HTML file
+			System.out.println("-------------------------");
 			HTMLQuestionWriter writer = new HTMLQuestionWriter(destination, question);
 			writer.writeHTML();
 			dietlera15.LogFileMessage("Quiz program stopped.");

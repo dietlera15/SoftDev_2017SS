@@ -1,22 +1,33 @@
-[2017-05-29 21:47:36] - -------------------------
-[2017-05-29 21:47:36] - Quiz program started.
-[2017-05-29 21:47:36] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
-[2017-05-29 21:47:36] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/Question.csv
-[2017-05-29 21:47:36] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
-[2017-05-29 21:47:36] - Corrupted values in line 3: Not enough or to many answers for question.
-[2017-05-29 21:47:36] - Corrupted values in line 4: Not enough or to many answers for question.
-[2017-05-29 21:47:36] - Corrupted values in line 5: Not enough or to many answers for question.
-[2017-05-29 21:47:36] - Corrupted values in line 6: Not enough or to many answers for question.
-[2017-05-29 21:47:36] - 5 lines were found in file.
-[2017-05-29 21:47:36] - Quiz program stopped.
-[2017-05-29 22:00:52] - -------------------------
-[2017-05-29 22:00:52] - Quiz program started.
-[2017-05-29 22:00:52] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
-[2017-05-29 22:00:52] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/Question.csv
-[2017-05-29 22:00:52] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
-[2017-05-29 22:00:52] - Corrupted values in line 3: Not enough or too many answers for question.
-[2017-05-29 22:00:52] - Corrupted values in line 4: Not enough or too many answers for question.
-[2017-05-29 22:00:52] - Corrupted values in line 5: Not enough or too many answers for question.
-[2017-05-29 22:00:52] - Corrupted values in line 6: Not enough or too many answers for question.
-[2017-05-29 22:00:52] - 5 lines were found in file.
-[2017-05-29 22:00:52] - Quiz program stopped.
+[2017-05-30 21:59:29] - -------------------------
+[2017-05-30 21:59:29] - Quiz program started.
+[2017-05-30 21:59:29] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
+[2017-05-30 21:59:29] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/Question.csv
+[2017-05-30 21:59:29] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
+[2017-05-30 21:59:29] - 5 lines were found in file.
+[2017-05-30 21:59:29] - Quiz program stopped.
+[2017-05-30 22:01:10] - -------------------------
+[2017-05-30 22:01:10] - Quiz program started.
+[2017-05-30 22:01:10] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
+[2017-05-30 22:01:10] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/Testfile.csv
+[2017-05-30 22:01:10] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
+[2017-05-30 22:01:10] - Comment in line 2: #Fragen ;;;;;
+[2017-05-30 22:01:10] - Comment in line 6: #Folgende Zeile ist ungueltig:;;;;;
+[2017-05-30 22:01:10] - Corrupted values in line 7: Question format is wrong (check CSV file).
+[2017-05-30 22:01:10] - Comment in line 9: #Tests;;;;;
+[2017-05-30 22:01:10] - Corrupted values in line 10: Correct index out of Bounds.
+[2017-05-30 22:01:10] - Corrupted values in line 11: Not enough answers for question.
+[2017-05-30 22:01:10] - 7 lines were found in file.
+[2017-05-30 22:01:10] - Quiz program stopped.
+[2017-05-30 22:05:02] - -------------------------
+[2017-05-30 22:05:02] - Quiz program started.
+[2017-05-30 22:05:02] - Actual Directory: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15
+[2017-05-30 22:05:02] - source file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/CSVFile/Testfile.csv
+[2017-05-30 22:05:02] - destination file: C:\Users\andreas\git\SoftDev_2017SS\Quiz_dietlera15/HTMLFile/index.html
+[2017-05-30 22:05:02] - Comment in line 2: #Fragen ;;;;;
+[2017-05-30 22:05:02] - Comment in line 6: #Folgende Zeile ist ungueltig:;;;;;
+[2017-05-30 22:05:02] - Corrupted values in line 7: Question format is wrong (check CSV file).
+[2017-05-30 22:05:02] - Comment in line 9: #Tests;;;;;
+[2017-05-30 22:05:02] - Corrupted values in line 10: Correct index out of Bounds.
+[2017-05-30 22:05:02] - Corrupted values in line 11: Not enough answers for question.
+[2017-05-30 22:05:02] - 7 lines were found in file.
+[2017-05-30 22:05:02] - Quiz program stopped.

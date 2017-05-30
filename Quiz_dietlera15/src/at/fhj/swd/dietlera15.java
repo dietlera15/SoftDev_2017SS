@@ -5,7 +5,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * the class contains static methods for the usage in my programs
+ * @author andreas
+ *
+ */
 public class dietlera15 {
 	private static String logFile = System.getProperty("user.dir") + "/log.txt";
 	
@@ -98,7 +102,7 @@ public class dietlera15 {
 		return "\t<footer>\n"
 				+ "\t\t<h6>Andreas Dietler<br></br>\n"
 				+ "\t\tSoftware Development<br></br>\n"
-				+ "\t\tSoftware Design WS2016<br></br>\n"
+				+ "\t\tSoftware Design SS2017<br></br>\n"
 				+ "\t\tFH Joanneum Kapfenberg</h6>\n"
 			+ "\t</footer>\n"
 		+ "</body>\n"
@@ -111,9 +115,16 @@ public class dietlera15 {
 	 */
 	private static String getStyleSheet() {
 		return "\t<style>\n"
-				+ ".low {color: red;}"
-				+ "#table-header {font-weight: bold; color: blue;}"
-				+ "#austria {font-weight: bold; color: green;}"
+				+ "\t\tbody {font-family: Verdana, Arial, sans-serif, serif; color: #88CCCC; background-color: #001111}\n"
+				+ "\t\theader {text-align:center; background-color: #112222; margin: 5px; padding: 5px; border-style: solid; border-width: 2px;}\n"
+				+ "\t\tfooter {text-align:center; background-color: #112222; margin: 5px; padding: 5px; border-style: solid; border-width: 2px;}\n"
+				+ "\t\tmain {background-color: #112222; margin: 5px; padding: 5px; border-style: solid; border-width: 2px;}\n"
+				+ "\t\tsection {margin: 5px; padding: 5px; border-style: dotted; border-width: 1px;}\n"
+				
+				+ "\t\t.question {font-weight: bold; color: #44CCCC;}\n"
+				+ "\t\t.answer {font-weight: bold; color: #22DD22;}\n"
+				+ "\t\t.odd {background-color: #113333; color: #CCCCCC;}\n"
+				+ "\t\t.even {background-color: #114444; color: #DDDDDD;}\n"
 			+ "\t</style>\n";
 	}
 }
